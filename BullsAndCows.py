@@ -1,10 +1,15 @@
 def get_input():
     while True:
-        user_input = input("숫자를 입력하세요")
-        number = user_input.split()
+        user_input = input("")
+        number = len(user_input)
+        print(number)
         if user_input.isalpha():
+            print("숫자를 입력해주세요.")
             continue
-        else:
+        if number!=4:
+            print("4개의 숫자를 입력해주세요")
+            continue
+        else: 
             break
     return user_input
 
