@@ -4,7 +4,9 @@ import itertools
 
 def createRandom():
     randomList = [''.join(x) for x in list(itertools.permutations('0123456789',4))]
+
     return str(random.choice(randomList))
+
 
 def get_input():
     while True:
@@ -17,6 +19,7 @@ def get_input():
         if number!=4:
             print("4개의 숫자를 입력해주세요")
             continue
+
         else:
             break
     return user_input
@@ -53,3 +56,6 @@ while True:
     if answer == input_numbers:
         print(f"{count} 번 시도 만에 정답을 찾았습니다.")
         break
+
+    print("Bulls:",Bulls," Cows:",Cows)
+
